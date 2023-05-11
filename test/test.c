@@ -272,7 +272,15 @@ int main(void)
     //     return x+y+z;
     // }
 
-    return 0;
+    int a[] = {1,2,3,4,5};
+
+    int x=1,y=2,z=3;
+    int b[10] = { x, y, z};
+
+    int c[10] = {1,2,3,4,5};
+    int d[2] = {0, 0};
+    int e[x];
+    return 0; 
 }
 
 // #include <stdio.h>
