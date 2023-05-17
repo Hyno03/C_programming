@@ -1,3 +1,4 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 
 int main(void)
@@ -272,16 +273,49 @@ int main(void)
     //     return x+y+z;
     // }
 
-    int a[] = {1,2,3,4,5};
+    // int a[] = {1,2,3,4,5};
 
-    int x=1,y=2,z=3;
-    int b[10] = { x, y, z};
+    // int x=1,y=2,z=3;
+    // int b[10] = { x, y, z};
 
-    int c[10] = {1,2,3,4,5};
-    int d[2] = {0, 0};
-    int e[x];
-    return 0; 
+    // int c[10] = {1,2,3,4,5};
+    // int d[2] = {0, 0};
+    // int e[x];
+
+    // float test[10] = {0};
+    // if(scanf("%f",&test[0]) < 1)
+    // {
+    //     printf("Wrong input\n");
+    //     return 0;
+    // }
+    // return 0; 
+
+    // int x = 6;
+    // int *p = &x;
+    // printf("%d\n",--(*p));
+    // printf("%d\n",(*p)++);
+
+    // int *p = (int *)1000;
+    // double *q = (double *)2000;
+    // printf("%d\n",p+2);
+    // printf("%d\n",q+1);
+
+    int list[10] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+    int *p;
+    p = list;
+    printf("%d\n",*list);
+    printf("%d\n",*p+1);
+    printf("%d\n",*(p+1));
 }
+
+// int compute_avg(int array[][60]){ ... }
+
+// int main(void)
+// {
+//     int scores[10][60];
+//     compute_avg(scores);
+// }
+
 
 // #include <stdio.h>
 
