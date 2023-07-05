@@ -1,4 +1,4 @@
-#define PROB 5
+#define PROB 8
 
 #if PROB ==1
 #include <stdio.h>
@@ -123,4 +123,53 @@ int main(void)
     return 0;
 }
 
+#elif PROB == 6
+#include <stdio.h>
+
+int main(void)
+{
+    int i = 10;
+    int *p = &i;
+
+    printf("i = %d, p = %p\n",i,p);
+    *p++;
+    printf("i = %d, p = %p\n",i,p);
+    (*p)++;
+    printf("i = %d, p = %p\n",i,p);
+    *++p;
+    printf("i = %d, p = %p\n",i,p);
+    ++*p;
+    printf("i = %d, p = %p\n",i,p);
+
+    return 0;
+}
+
+#elif PROB ==7
+#include <stdio.h>
+
+int main(void)
+{
+    int i = 80;
+    int *p = &i;
+    int **dp = &p;
+
+    **dp = 90;
+    *p = 100;
+    printf("%d %d %d",i,*p,**dp);
+    
+    return 0;
+}
+
+#elif PROB ==8
+#include <stdio.h>
+
+int main(void)
+{
+    int m[3][2] = {1,2,3,4,5,6};
+
+    printf("%d\n",**m);
+    printf("%d\n",*m[1]); 
+
+    return 0;
+}
 #endif
